@@ -17,7 +17,7 @@ function RI(min, max)
 }
 
 window.onload = function () {
-       P = Raphael(0, 0, document.width, document.height, "render");
+       P = Raphael(0, 0, 1000, 1000, "render");
        seed();
        field();
        clear();
@@ -29,7 +29,7 @@ function pause() {
 }
 
 function resume() {
-  int = setInterval(function(){update()},10);  
+  int = setInterval(function(){update()},100);  
 }
 
 function clear() {
